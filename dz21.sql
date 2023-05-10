@@ -11,7 +11,7 @@ CREATE TABLE IF NOT EXISTS musician (
 CREATE TABLE IF NOT EXISTS album (
 	album_id serial PRIMARY KEY,
 	name varchar(50),
-	year varchar(4)
+	year integer
 );
 
 CREATE TABLE IF NOT EXISTS track (
@@ -25,7 +25,7 @@ CREATE TABLE IF NOT EXISTS track (
 CREATE TABLE IF NOT EXISTS collection (
 	collection_id serial PRIMARY KEY,
 	name varchar(50),
-	year varchar(4)
+	year integer
 );
 
 CREATE TABLE IF NOT EXISTS genre_musician (
